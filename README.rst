@@ -15,13 +15,12 @@ Sample code
 
   >>> from domo.client import Client                                              >>> c = Client(apikey='YOUR_API_KEY')
   >>> res = c.send(utt='hello', apiname='Dialogue')
-  >>> print(res.status_code)
-  200
-  >>> print(res.headers)
-  {'Content-Length': '99', 'Connection': 'keep-alive', 'Content-Type': 'application/json;charset=UTF-8', 'Date': 'Wed, 17 Dec 2014 05:28:28 GMT', 'asyncServiceInvoke': 'false'}
-  >>> print(res.content.decode('utf-8'))
+  >>> print(res)
   {"utt":"はろー","yomi":"はろー","mode":"dialog","da":"30","context":"7DGIKMpQDE0zrQrYFAMqdw"}
-
+  >>> print(c.last_response.status_code)
+  200
+  >>> print(c.last_response.headers)
+  {'Content-Length': '99', 'Connection': 'keep-alive', 'Content-Type': 'application/json;charset=UTF-8', 'Date': 'Wed, 17 Dec 2014 05:28:28 GMT', 'asyncServiceInvoke': 'false'}
 
 Cli example
 -----------
