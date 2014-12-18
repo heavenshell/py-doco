@@ -27,7 +27,6 @@ Cli example
 
 .. code:: python
 
-  $ cd examples
   $ python examples/dialogue_cli.py -u こんにちは
   'mode': 'dialog', 'utt': 'どうも', 'context': 'N1liohyhkp6K7M80KS3bwg', 'da': '0', 'yomi': 'どうも'}
   $ python dialogue_cli.py -i
