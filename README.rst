@@ -27,6 +27,7 @@ Cli example
 
 .. code:: python
 
+  $ export DOMO_API_KEY="YOUR API KEY"
   $ python examples/dialogue_cli.py -u こんにちは
   'mode': 'dialog', 'utt': 'どうも', 'context': 'N1liohyhkp6K7M80KS3bwg', 'da': '0', 'yomi': 'どうも'}
   $ python dialogue_cli.py -i
@@ -36,6 +37,7 @@ Interactive shell mode
 
 .. code:: python
 
+  $ export DOMO_API_KEY="YOUR API KEY"
   $ python examples/dialogue_cli.py -i
   Welcome to docomo dialogue cli.
   ^D to exit.
@@ -48,6 +50,7 @@ Shiritori mode
 
 .. code:: python
 
+  $ export DOMO_API_KEY="YOUR API KEY"
   $ python examples/dialogue_cli.py -i -s
   Welcome to docomo dialogue cli.
   ^D to exit.
