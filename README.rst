@@ -11,7 +11,7 @@ Supported apis
 Sample code
 -----------
 
-::
+..
   >>> from domo.client import Client                                              >>> c = Client(apikey='YOUR_API_KEY')
   >>> res = c.send(utt='hello', apiname='Dialogue')
   >>> print(res.status_code)
@@ -25,7 +25,7 @@ Sample code
 Cli example
 -----------
 
-::
+..
   $ cd examples
   $ python examples/dialogue_cli.py -u こんにちは
   'mode': 'dialog', 'utt': 'どうも', 'context': 'N1liohyhkp6K7M80KS3bwg', 'da': '0', 'yomi': 'どうも'}
@@ -34,7 +34,7 @@ Cli example
 Interactive shell mode
 ~~~~~~~~~~~~~~~~~~~~~~
 
-::
+..
   $ python examples/dialogue_cli.py -i
   Welcome to docomo dialogue cli.
   ^D to exit.
@@ -45,7 +45,7 @@ Interactive shell mode
 Shiritori mode
 ~~~~~~~~~~~~~~
 
-::
+..
   $ python examples/dialogue_cli.py -i -s
   Welcome to docomo dialogue cli.
   ^D to exit.
