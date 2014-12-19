@@ -41,7 +41,7 @@ class Client(object):
         """Register api.
 
         :param name: Api name
-        :param Api: Api object
+        :param api: Api object
         """
         if isinstance(api, DomoInterface) is False:
             raise DomoError('Api should be implementation of DomoInterface.')

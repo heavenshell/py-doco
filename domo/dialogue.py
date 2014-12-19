@@ -83,7 +83,7 @@ class Dialogue(DomoInterface):
     def parse(self, response):
         """Parse requests response.
 
-        :param response:
+        :param response: Parsed response dict
         """
         self.last_response = response
         response = json.loads(to_unicode(response.content))
