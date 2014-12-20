@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    domo
+    doco
     ~~~~
 
     Docomo is a client library for docomo API.
@@ -14,12 +14,12 @@ import requests
 __version__ = '0.0.1'
 
 
-class DomoError(Exception):
+class DocoError(Exception):
     """ Exception. """
     pass
 
 
-class DomoInterface(object):
+class DocoInterface(object):
     #: Default log format.
     debug_log_format = (
         '[%(asctime)s %(levelname)s][%(pathname)s:%(lineno)d]: %(message)s'
@@ -46,7 +46,7 @@ class DomoInterface(object):
         if response.status_code == 200:
             return response
 
-        raise DomoError('Status is {0}, params is {1} .'.format(
+        raise DocoError('Status is {0}, params is {1} .'.format(
                         response.status_code, params))
 
     def send(self, **kwargs):

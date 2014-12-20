@@ -1,4 +1,4 @@
-Domo
+doco
 ====
 Client library for docomo API written in Python. 
 
@@ -13,7 +13,7 @@ Sample code
 
 .. code:: python
 
-  >>> from domo.client import Client                                              >>> c = Client(apikey='YOUR_API_KEY')
+  >>> from doco.client import Client                                              >>> c = Client(apikey='YOUR_API_KEY')
   >>> res = c.send(utt='hello', apiname='Dialogue')
   >>> print(res)
   {"utt":"はろー","yomi":"はろー","mode":"dialog","da":"30","context":"7DGIKMpQDE0zrQrYFAMqdw"}
@@ -27,7 +27,7 @@ Cli example
 
 .. code:: python
 
-  $ export DOMO_API_KEY="YOUR API KEY"
+  $ export DOCO_API_KEY="YOUR API KEY"
   $ python examples/dialogue_cli.py -u こんにちは
   'mode': 'dialog', 'utt': 'どうも', 'context': 'N1liohyhkp6K7M80KS3bwg', 'da': '0', 'yomi': 'どうも'}
   $ python dialogue_cli.py -i
@@ -37,7 +37,7 @@ Interactive shell mode
 
 .. code:: python
 
-  $ export DOMO_API_KEY="YOUR API KEY"
+  $ export DOCO_API_KEY="YOUR API KEY"
   $ python examples/dialogue_cli.py -i
   Welcome to docomo dialogue cli.
   ^D to exit.
@@ -50,7 +50,7 @@ Shiritori mode
 
 .. code:: python
 
-  $ export DOMO_API_KEY="YOUR API KEY"
+  $ export DOCO_API_KEY="YOUR API KEY"
   $ python examples/dialogue_cli.py -i -s
   Welcome to docomo dialogue cli.
   ^D to exit.

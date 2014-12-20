@@ -17,8 +17,8 @@ import argparse
 import logging
 sys.path.append(os.path.abspath(os.path.pardir))
 
-from domo import DomoInterface
-from domo.client import Client
+from doco import DocoInterface
+from doco.client import Client
 
 
 def write(msg):
@@ -73,13 +73,13 @@ def main():
     args = parse_option()
     apikey = args.apikey
     if apikey is None:
-        apikey = os.environ['DOMO_API_KEY']
+        apikey = os.environ['DOCO_API_KEY']
 
     if apikey is None:
         sys.exit(1)
 
     level = logging.INFO if args.verbose is True else logging.ERROR
-    logging.basicConfig(level=level, format=DomoInterface.debug_log_format)
+    logging.basicConfig(level=level, format=DocoInterface.debug_log_format)
 
     shiritori = args.shiritori
     options = {}

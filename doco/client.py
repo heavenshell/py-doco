@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    domo.client
+    doco.client
     ~~~~~~~~~~~
 
     Client for docomo API.
@@ -9,8 +9,8 @@
     :copyright: (c) 2014 Shinya Ohyanagi, All rights reserved.
     :license: BSD, see LICENSE for more details.
 """
-from domo import __version__, DomoInterface, DomoError
-from domo.dialogue import Dialogue
+from doco import __version__, DocoInterface, DocoError
+from doco.dialogue import Dialogue
 
 
 class Client(object):
@@ -43,8 +43,8 @@ class Client(object):
         :param name: Api name
         :param api: Api object
         """
-        if isinstance(api, DomoInterface) is False:
-            raise DomoError('Api should be implementation of DomoInterface.')
+        if isinstance(api, DocoInterface) is False:
+            raise DocoError('Api should be implementation of DocoInterface.')
 
         self.apis[name] = api
 

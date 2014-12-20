@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    domo.tests.test_client
+    doco.tests.test_client
     ~~~~~~~~~~~~~~~~~~~~~~
 
     Tests for docomo api.
@@ -12,7 +12,7 @@
 import simplejson as json
 from mock import patch
 from unittest import TestCase
-from domo.client import Client
+from doco.client import Client
 
 
 def dummy_response(m):
@@ -40,7 +40,7 @@ class TestClient(TestCase):
         c = Client(apikey='key')
         self.assertEqual(c.DEFAULT_HEADERS['User-Agent'], 'Python client 0.0.1')
 
-    @patch('domo.requests.post')
+    @patch('doco.requests.post')
     def test_send(self, m):
         """ Client().send() should send request to api. """
         dummy_response(m)
@@ -48,7 +48,7 @@ class TestClient(TestCase):
         ret = c.send(utt=u'ぬるぽ', apiname='Dialogue')
         self.assertEqual(ret['context'], 'D0yHgwljc_mhTPIGs--toQ')
 
-    @patch('domo.requests.post')
+    @patch('doco.requests.post')
     def test_last_response(self, m):
         """ Client().send() should send request to api and set response. """
         dummy_response(m)

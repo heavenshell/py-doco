@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    domo.dialogue
+    doco.dialogue
     ~~~~~~~~~~~~~
 
     docomo Dialogue api.
@@ -13,13 +13,13 @@
 """
 import logging
 import simplejson as json
-from domo import DomoInterface
-from domo._compat import to_unicode
+from doco import DocoInterface
+from doco._compat import to_unicode
 
-logger = logging.getLogger('domo')
+logger = logging.getLogger('doco')
 
 
-class Dialogue(DomoInterface):
+class Dialogue(DocoInterface):
     #: Dialogue path.
     PATH = '/dialogue/v1/dialogue'
 

@@ -11,7 +11,7 @@
 import os
 from setuptools import setup, find_packages
 
-app_name = 'domo'
+app_name = 'doco'
 
 rst = os.path.join(os.path.dirname(__file__), 'README.rst')
 description = ''
@@ -23,7 +23,7 @@ setup(
     version='0.0.1',
     author='Shinya Ohyanagi',
     author_email='sohyanagi@gmail.com',
-    url='http://github.com/heavenshell/py-domo',
+    url='http://github.com/heavenshell/py-doco',
     description=description,
     long_description=description,
     license='BSD',

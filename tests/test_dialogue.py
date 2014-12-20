@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    domo.tests.test_dialogue
+    doco.tests.test_dialogue
     ~~~~~~~~~~~~~~~~~~~~~~~~
 
     Tests for dialogue.
@@ -12,7 +12,7 @@
 import simplejson as json
 from unittest import TestCase
 from mock import patch
-from domo.client import Client
+from doco.client import Client
 
 
 def dummy_response(m):
@@ -47,7 +47,7 @@ class TestDialogue(TestCase):
         self.assertEqual(sorted(ret), sorted(user))
         self.assertEqual(sorted(c.apis['Dialogue'].user), sorted(user))
 
-    @patch('domo.requests.post')
+    @patch('doco.requests.post')
     def test_parse_response(self, m):
         """ Dialogue().parse() should parse request to api. """
         dummy_response(m)
@@ -56,7 +56,7 @@ class TestDialogue(TestCase):
         ret = c.apis['Dialogue'].parse(c.last_response)
         self.assertTrue(isinstance(ret, dict))
 
-    @patch('domo.requests.post')
+    @patch('doco.requests.post')
     def test_context(self, m):
         """ Dialogue().parse() should extract context. """
         dummy_response(m)
