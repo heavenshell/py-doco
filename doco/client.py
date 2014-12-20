@@ -30,7 +30,6 @@ class Client(object):
         :param user: User specific infomation
         """
         self.apikey = apikey
-        self.context = None
         self.apis = {}
         self.last_response = None
 
