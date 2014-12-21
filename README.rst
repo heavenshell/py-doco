@@ -13,7 +13,8 @@ Sample code
 
 .. code:: python
 
-  >>> from doco.client import Client                                              >>> c = Client(apikey='YOUR_API_KEY')
+  >>> from doco.client import Client
+  >>> c = Client(apikey='YOUR_API_KEY')
   >>> res = c.send(utt='hello', apiname='Dialogue')
   >>> print(res)
   {"utt":"はろー","yomi":"はろー","mode":"dialog","da":"30","context":"7DGIKMpQDE0zrQrYFAMqdw"}
