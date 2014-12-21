@@ -1,11 +1,11 @@
 doco
 ====
+.. image:: https://travis-ci.org/heavenshell/py-doco.svg?branch=master
+    :target: https://travis-ci.org/heavenshell/py-doco
+
 Client library for docomo API written in Python.
 
 https://dev.smt.docomo.ne.jp/?p=docs.index
-
-.. image:: https://travis-ci.org/heavenshell/py-doco.svg?branch=master
-    :target: https://travis-ci.org/heavenshell/py-doco
 
 Supported apis
 --------------
