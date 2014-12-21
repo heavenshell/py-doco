@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    Add comment here
-    ~~~~~~~~~~~~~~~~
+    doco.examples.dialogue_cli
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    Add descripton here
+    Example of clie application.
 
 
     :copyright: (c) 2014 Shinya Ohyanagi, All rights reserved.
