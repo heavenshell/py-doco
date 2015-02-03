@@ -24,7 +24,7 @@ setup(
     author='Shinya Ohyanagi',
     author_email='sohyanagi@gmail.com',
     url='http://github.com/heavenshell/py-doco',
-    description=description,
+    description='Client library for docomo API written in Python.',
     long_description=description,
     license='BSD',
     platforms='any',
