@@ -20,7 +20,7 @@ with open(rst, 'r') as f:
 
 setup(
     name=app_name,
-    version='0.0.1',
+    version='0.0.2',
     author='Shinya Ohyanagi',
     author_email='sohyanagi@gmail.com',
     url='http://github.com/heavenshell/py-doco',
@@ -28,8 +28,8 @@ setup(
     long_description=description,
     license='BSD',
     platforms='any',
-    packages=find_packages(app_name),
-    package_dir={'': app_name},
+    packages=find_packages(exclude=['tests']),
+    package_dir={'': '.'},
     install_requires=['requests', 'simplejson'],
     classifiers=[
         'Development Status :: 4 - Beta',
