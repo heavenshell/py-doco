@@ -30,15 +30,15 @@ def dummy_response(m):
 
 class TestClient(TestCase):
     def test_default_useragent(self):
-        """ Default user-agent should be `Python client 0.0.2`."""
+        """ Default user-agent should be `Python client 0.0.3`."""
         c = Client(apikey='key')
         self.assertEqual(c.DEFAULT_USER_AGENT,
-                         'Python client 0.0.2')
+                         'Python client 0.0.3')
 
     def test_default_header(self):
         """ Default headers should contains user-agent. """
         c = Client(apikey='key')
-        self.assertEqual(c.DEFAULT_HEADERS['User-Agent'], 'Python client 0.0.2')
+        self.assertEqual(c.DEFAULT_HEADERS['User-Agent'], 'Python client 0.0.3')
 
     @patch('doco.requests.post')
     def test_send(self, m):
