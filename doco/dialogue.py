@@ -86,7 +86,7 @@ class Dialogue(DocoInterface):
         :param response: Parsed response dict
         """
         self.last_response = response
-        response = json.loads(to_unicode(response.content))
+        response = json.loads(response.content)
         if 'context' in response:
             self.context = response['context']
 

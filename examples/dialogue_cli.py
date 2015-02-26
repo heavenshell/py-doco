@@ -19,10 +19,15 @@ sys.path.append(os.path.abspath(os.path.pardir))
 
 from doco import DocoInterface
 from doco.client import Client
+from doco._compat import PY2
 
 
 def write(msg):
-    msg = '\033[37m{0}\033[0m'.format(msg)
+    if PY2:
+        msg = '\033[37m{0}\033[0m'.format(msg.encode('utf-8'))
+    else:
+        msg = '\033[37m{0}\033[0m'.format(msg)
+
     sys.stdout.write(msg)
     sys.stdout.write('\n')
 
