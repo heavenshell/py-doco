@@ -15,7 +15,7 @@ import sys
 import code
 import argparse
 import logging
-sys.path.append(os.path.abspath(os.path.pardir))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from doco import DocoInterface
 from doco.client import Client
