@@ -14,7 +14,6 @@
 import logging
 import simplejson as json
 from doco import DocoInterface
-from doco._compat import to_unicode
 
 logger = logging.getLogger('doco')
 
