@@ -17,9 +17,9 @@ import argparse
 import logging
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from doco import DocoInterface
-from doco.client import Client
-from doco._compat import PY2
+from doco import DocoInterface  # noqa E402
+from doco.client import Client  # noqa E402
+from doco._compat import PY2  # noqa E402
 
 
 def write(msg):

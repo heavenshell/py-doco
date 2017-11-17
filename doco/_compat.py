@@ -13,27 +13,27 @@ import sys
 
 PY2 = sys.version_info[0] == 2
 
-if PY2:
-    text_type = unicode
+if PY2:  # noqa
+    text_type = unicode  # noqa
 
-    iterkeys = lambda d: d.iterkeys()
-    itervalues = lambda d: d.itervalues()
-    iteritems = lambda d: d.iteritems()
+    iterkeys = lambda d: d.iterkeys()  # noqa E731
+    itervalues = lambda d: d.itervalues()  # noqa E731
+    iteritems = lambda d: d.iteritems()  # noqa E731
 
     def to_bytes(x, charset=sys.getdefaultencoding(), errors='strict'):
         if x is None:
             return None
-        if isinstance(x, (bytes, bytearray, buffer)):
+        if isinstance(x, (bytes, bytearray, buffer)):  # noqa F821
             return bytes(x)
-        if isinstance(x, unicode):
+        if isinstance(x, unicode):  # noqa F821
             return x.encode(charset, errors)
         raise TypeError('Expected bytes')
 else:
     text_type = str
 
-    iterkeys = lambda d: iter(d.keys())
-    itervalues = lambda d: iter(d.values())
-    iteritems = lambda d: iter(d.items())
+    iterkeys = lambda d: iter(d.keys())  # noqa E731
+    itervalues = lambda d: iter(d.values())  # noqa E731
+    iteritems = lambda d: iter(d.items())  # noqa E731
 
     def to_bytes(x, charset=sys.getdefaultencoding(), errors='strict'):
         if x is None:
