@@ -15,7 +15,7 @@ app_name = 'doco'
 
 rst = os.path.join(os.path.dirname(__file__), 'README.rst')
 description = ''
-with open(rst, 'r') as f:
+with open(rst, 'r', encoding='utf8') as f:
     description = f.read()
 
 setup(
