@@ -9,6 +9,7 @@
     :license: BSD, see LICENSE for more details.
 """
 import os
+from codecs import open
 from setuptools import setup, find_packages
 
 app_name = 'doco'
