@@ -9,13 +9,14 @@
     :license: BSD, see LICENSE for more details.
 """
 import os
+from codecs import open
 from setuptools import setup, find_packages
 
 app_name = 'doco'
 
 rst = os.path.join(os.path.dirname(__file__), 'README.rst')
 description = ''
-with open(rst, 'r') as f:
+with open(rst, 'r', encoding='utf8') as f:
     description = f.read()
 
 setup(
