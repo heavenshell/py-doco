@@ -1,6 +1,9 @@
-include LICENSE README.rst
-recursive-include docs *
-recursive-exclude docs *.pyc
-recursive-exclude docs *.pyo
-recursive-exclude tests *.pyc
-recursive-exclude tests *.pyo
+include LICENSE
+include README.rst
+include setup.cfg
+include setup.py
+
+graft doco
+
+global-exclude *.py[co]
+global-exclude *.cfg
