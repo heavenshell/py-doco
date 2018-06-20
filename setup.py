@@ -29,7 +29,7 @@ setup(
     long_description=description,
     license='BSD',
     platforms='any',
-    packages=find_packages(exclude=['tests', 'examples']),
+    packages=find_packages(exclude=['tests', 'examples', 'docs']),
     package_dir={'': '.'},
     install_requires=['requests', 'simplejson'],
     classifiers=[

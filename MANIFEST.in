@@ -1,9 +1,21 @@
+graft doco
+graft docs
+
 include LICENSE
 include README.rst
+include CHANGES.rst
 include setup.cfg
 include setup.py
 
-graft doco
+exclude .travis.yml
+exclude requirements.txt
+exclude tox.ini
 
+global-exclude __pycache__
 global-exclude *.py[co]
 global-exclude *.cfg
+
+prune .github
+prune docs/_build
+prune tests
+prune examples
