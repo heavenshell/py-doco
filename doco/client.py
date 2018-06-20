@@ -9,7 +9,7 @@
     :copyright: (c) 2014 Shinya Ohyanagi, All rights reserved.
     :license: BSD, see LICENSE for more details.
 """
-from doco import __version__, DocoInterface, DocoError
+from doco import DocoError, DocoInterface, __version__
 from doco.dialogue import Dialogue
 
 
@@ -20,14 +20,14 @@ class Client(object):
     #: Headers.
     DEFAULT_HEADERS = {
         'User-Agent': DEFAULT_USER_AGENT,
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
     }
 
     def __init__(self, apikey=None, **kwargs):
         """Construct client.
 
         :param apikey: Api key
-        :param user: User specific infomation
+        :param user: User specific information
         """
         self.apikey = apikey
         self.apis = {}

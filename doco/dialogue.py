@@ -12,8 +12,11 @@
     :license: BSD, see LICENSE for more details.
 """
 import logging
-import simplejson as json
+
 from doco import DocoInterface
+
+import simplejson as json
+
 
 logger = logging.getLogger('doco')
 
@@ -22,10 +25,10 @@ class Dialogue(DocoInterface):
     #: Dialogue path.
     PATH = '/dialogue/v1/dialogue'
 
-    #: Set dialogue charactor.
-    charactor = {
+    #: Set dialogue character.
+    character = {
         'kansai': 20,
-        'baby': 30
+        'baby': 30,
     }
 
     def __init__(self, **kwargs):
@@ -92,6 +95,6 @@ class Dialogue(DocoInterface):
         return response
 
     def refresh(self):
-        """Refresh dialogue. """
+        """Refresh dialogue."""
         self.context = None
         self.response = None
