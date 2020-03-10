@@ -1,4 +1,4 @@
-requests==2.22.0
+requests==2.23.0
 mock==3.0.5
 simplejson==3.17.0
 flake8==3.7.9
