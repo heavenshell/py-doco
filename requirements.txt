@@ -1,4 +1,4 @@
 requests==2.25.1
 mock==4.0.3
 simplejson==3.17.2
-flake8==3.9.0
+flake8==3.9.1
